@@ -21,14 +21,14 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: 127.0.0.1
-  username: <%= ENV["APP_DATABASE_ROLE_NAME"] %>
-  password: <%= ENV["APP_DATABASE_PASSWORD"] %>
-
 
 development:
   <<: *default
   database: tesla_rental_backend
+  host: 127.0.0.1
+  port: 5432
+  username: <%= ENV["APP_DATABASE_ROLE_NAME"] %>
+  password: <%= ENV["APP_DATABASE_PASSWORD"] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,7 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: tesla_rental_backend
   url: <%= ENV['DATABASE_URL'] %>
-  # username: mysite
-  # password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
