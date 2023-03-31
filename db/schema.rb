@@ -10,20 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_07_091739) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_31_160504) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cars", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "image", null: false
-    t.string "brand", null: false
-    t.integer "duration", null: false
-    t.integer "total_amount_payable", null: false
-    t.integer "option_to_purchase_fee", null: false
+    t.string "name"
+    t.string "brand"
+    t.string "image"
+    t.integer "top_speed"
+    t.float "zero_to_sixty"
+    t.integer "range"
+    t.string "type"
+    t.string "transmission"
+    t.integer "rent_per_day"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "description", default: "A new car"
   end
 
   create_table "jwt_denylist", force: :cascade do |t|
@@ -37,8 +39,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_091739) do
     t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
     t.bigint "car_id", null: false
+    t.bigint "user_id", null: false
     t.index ["car_id"], name: "index_reservations_on_car_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
