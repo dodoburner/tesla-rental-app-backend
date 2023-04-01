@@ -9,6 +9,6 @@ class Car < ApplicationRecord
   validates :brand, presence: true, length: { minimum: MIN_NUM, maximum: MAX_LENGTH }
   validates :image, presence: true, length: { minimum: MIN_NUM }
 
-  enum engine_type: %i[electric hybrid petrol diesel gas]
-
+  ENGINE_TYPES = %w[electric hybrid petrol diesel gas].freeze
+  validates :engine_type, inclusion: { in: ENGINE_TYPES }, presence: true
 end
