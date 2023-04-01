@@ -21,6 +21,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+local: &local
   host: 127.0.0.1
   port: 5432
   username: <%= ENV["APP_DATABASE_ROLE_NAME"] %>
@@ -28,6 +30,7 @@ default: &default
 
 development:
   <<: *default
+  <<: *local
   database: tesla_rental_backend_dev
 
   # The specified database role being used to connect to postgres.
@@ -58,6 +61,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  <<: *local
   database: tesla_rental_backend_test
 
 # As with config/credentials.yml, you never want to store sensitive information,

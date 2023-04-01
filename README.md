@@ -32,7 +32,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 final-capstone-project-front-end <a name="about-project"></a>
-The project is based on an app to book an appointment to try a Car. User can see all cars listed in the database and is able to create a reservation for renting it. The user can add and delete a car if the user role is admin.
+The project is based on an app to book an appointment to try a Car. User can see all cars listed in the database and is able to create a reservation. The user can add and delete a car if the user role is admin.
 
 **[final-capstone-project-front-end]** is a...
 
@@ -75,8 +75,8 @@ The project is based on an app to book an appointment to try a Car. User can see
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://reserve-car.onrender.com/)
-- [API URL](https://microverse-final-capstone-backend.onrender.com)
+- [Live Demo Link](https://tesla-car-rental-app.netlify.app/#/)
+- [API URL]()
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Kanban Board -->
