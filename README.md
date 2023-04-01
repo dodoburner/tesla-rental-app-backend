@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Microverse Final group capstone - Book an Appointment - Backend</b></h3>
+  <h3><b>Tesla Car Rental App - Backend</b></h3>
 
 </div>
 
@@ -32,7 +32,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 final-capstone-project-front-end <a name="about-project"></a>
-The project is based on an app to book an appointment to try a Car. User see all cars in database and is able to book and try one. User can add and delete a car if user role is admin
+The project is based on an app to book an appointment to try a Car. User can see all cars listed in the database and is able to create a reservation for renting it. The user can add and delete a car if the user role is admin.
 
 **[final-capstone-project-front-end]** is a...
 
@@ -98,9 +98,8 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-```sh
- npm intall node
-```
+- A Ruby runtime environment
+- A code editor such as VS Code
 
 
 ### Setup
@@ -108,7 +107,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/learnwithalfred/backend-microverse-final-capstone
+  git clone https://github.com/dodoburner/tesla-rental-app-backend.git
 ```
 
 ### Install
@@ -116,7 +115,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd backend-microverse-final-capstone
+  cd tesla-rental-app-backend
   bundle install
 ```
 
