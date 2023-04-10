@@ -34,6 +34,8 @@
 # 📖 final-capstone-project-front-end <a name="about-project"></a>
 The project is based on an app to book an appointment to try a Car. User can see all cars listed in the database and is able to create a reservation. The user can add and delete a car if the user role is admin.
 
+Video overview: https://www.loom.com/share/3dbf73b6354f4561a576c9f61a41eeae
+
 **[final-capstone-project-front-end]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
